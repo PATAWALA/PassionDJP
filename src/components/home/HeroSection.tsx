@@ -48,11 +48,11 @@ export function HeroSection() {
       >
         <motion.h1
           variants={itemVariants}
-          className="text-4xl md:text-6xl font-bold text-ink mb-6 leading-tight"
+          className="text-3xl sm:text-4xl md:text-6xl font-bold text-ink mb-8 md:mb-6 leading-tight tracking-tight"
         >
           Trouvez la doctrine juridique
           <br />
-          <span className="relative inline-block">
+          <span className="relative inline-block mt-2">
             <span className="text-primary">fiable et actualisée</span>
             <span className="absolute left-0 -bottom-2 w-full h-[3px] bg-primary rounded-full" />
           </span>
