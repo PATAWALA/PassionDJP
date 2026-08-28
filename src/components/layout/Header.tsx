@@ -32,7 +32,7 @@ export function Header() {
           <Link href="/media" className="text-base font-medium text-white/90 hover:text-white transition-colors">
             Médias
           </Link>
-          <Link href="#" className="text-base font-medium text-white/90 hover:text-white transition-colors">
+          <Link href="/a-propos" className="text-base font-medium text-white/90 hover:text-white transition-colors">
             À propos
           </Link>
         </nav>
