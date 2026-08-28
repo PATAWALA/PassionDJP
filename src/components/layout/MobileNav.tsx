@@ -50,7 +50,7 @@ export function MobileNav({ isOpen, onClose }: MobileNavProps) {
 
         <div className="mt-auto pb-8">
 <Link
-  href="/admin/login"
+  href="/espace-contributeurs"
   onClick={onClose}
   className="text-white/90 hover:text-white flex items-center gap-2 transition-colors"
 >

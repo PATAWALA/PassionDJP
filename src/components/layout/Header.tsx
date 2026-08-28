@@ -47,7 +47,7 @@ export function Header() {
           </Link>
 
 <Link
-  href="/admin/login"
+  href="/espace-contributeurs"
   className="hidden lg:inline-flex items-center gap-1.5 text-sm text-white/80 hover:text-white transition-colors"
 >
   <Lock className="h-4 w-4" />
