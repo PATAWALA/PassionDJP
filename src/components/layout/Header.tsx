@@ -18,7 +18,7 @@ export function Header() {
         <Link href="/" className="flex items-center gap-3">
           <div className="relative h-10 w-10 overflow-hidden rounded-lg bg-white/10">
             <Image
-              src="/images/logo.jpg"
+              src="/images/logo.jpeg"
               alt="PassionDJP"
               fill
               className="object-contain"

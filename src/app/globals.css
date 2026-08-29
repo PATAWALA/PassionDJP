@@ -109,3 +109,10 @@ a:hover {
     --tw-ring-color: var(--color-accent);
   }
 }
+/* globals.css */
+header a {
+  color: white !important;
+}
+header a:hover {
+  color: var(--color-accent) !important;
+}
