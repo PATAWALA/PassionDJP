@@ -35,7 +35,7 @@ const itemVariants = {
 
 export function HeroSection() {
   return (
-    <section className="relative py-20 md:py-28 overflow-hidden bg-gradient-to-b from-background via-background to-accent-light/60">
+    <section className="relative py-20 md:py-24 overflow-hidden bg-gradient-to-b from-background via-background to-accent-light/60">
       {/* Formes décoratives floues */}
       <div className="absolute top-20 right-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-72 h-72 bg-accent/10 rounded-full blur-3xl pointer-events-none" />
