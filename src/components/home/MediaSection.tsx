@@ -28,7 +28,8 @@ export function MediaSection() {
   return (
     <section className="py-16 bg-surface border-y border-border">
       <div className="container-editorial">
-        <h2 className="text-3xl font-bold text-ink mb-8">Médias & Transcriptions</h2>
+        <h2 className="text-3xl font-bold text-ink mb-2">Médias & Transcriptions</h2>
+        <div className="h-1 w-20 bg-accent mb-8" />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {medias.map((media) => (
             <MediaCard key={media.title} {...media} />

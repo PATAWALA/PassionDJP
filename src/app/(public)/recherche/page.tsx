@@ -61,7 +61,9 @@ export default function SearchPage() {
   return (
     <div className="py-12">
       <div className="container-editorial">
-        <h1 className="text-3xl md:text-4xl font-bold text-ink mb-8">Recherche doctrinale</h1>
+        <h1 className="text-3xl md:text-4xl font-bold text-ink mb-2">Recherche doctrinale</h1>
+        <div className="h-1 w-20 bg-accent mb-8" />
+
         <div className="flex gap-2 mb-10 max-w-2xl">
           <div className="relative flex-1">
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-ink-light" />
@@ -69,10 +71,10 @@ export default function SearchPage() {
               placeholder="Rechercher un thème, un mot-clé..."
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              className="pl-10"
+              className="pl-10 focus:border-accent"
             />
           </div>
-          <Button>Rechercher</Button>
+          <Button variant="gold">Rechercher</Button>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

@@ -36,9 +36,9 @@ const itemVariants = {
 export function HeroSection() {
   return (
     <section className="relative py-20 md:py-28 overflow-hidden bg-gradient-to-b from-background via-background to-accent-light/60">
-      {/* Forme décorative floue */}
+      {/* Formes décoratives floues */}
       <div className="absolute top-20 right-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-0 left-0 w-72 h-72 bg-primary/5 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-72 h-72 bg-accent/10 rounded-full blur-3xl pointer-events-none" />
 
       <motion.div
         className="container-editorial relative z-10 text-center md:text-left"
@@ -54,7 +54,7 @@ export function HeroSection() {
           <br />
           <span className="relative inline-block mt-2">
             <span className="text-primary">fiable et actualisée</span>
-            <span className="absolute left-0 -bottom-2 w-full h-[3px] bg-primary rounded-full" />
+            <span className="absolute left-0 -bottom-2 w-full h-[3px] bg-accent rounded-full" />
           </span>
         </motion.h1>
 
@@ -76,7 +76,7 @@ export function HeroSection() {
                 className="pl-10 py-4 text-base"
               />
             </div>
-            <Button size="lg" className="px-8">
+            <Button variant="gold" size="lg" className="px-8">
               Rechercher
             </Button>
           </div>
@@ -89,7 +89,7 @@ export function HeroSection() {
           {quickFilters.map((filter) => (
             <button
               key={filter}
-              className="px-4 py-2 rounded-full bg-surface border border-border text-sm text-ink-light hover:bg-accent-light hover:text-primary hover:border-primary transition-colors"
+              className="px-4 py-2 rounded-full bg-surface border border-border text-sm text-ink-light hover:bg-accent-light hover:text-accent hover:border-accent transition-colors"
             >
               {filter}
             </button>

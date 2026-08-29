@@ -4,7 +4,6 @@ import { MediaSection } from "@/components/home/MediaSection";
 import { NewsletterSection } from "@/components/home/NewsletterSection";
 import { PracticeAreasSection } from "@/components/home/PracticeAreasSection";
 
-
 const articles = [
   {
     title: "La réforme de la procédure civile : enjeux et perspectives",
@@ -53,23 +52,24 @@ export default function HomePage() {
     <>
       <HeroSection />
       <PracticeAreasSection />
-  <section className="py-16 bg-surface">
-  <div className="container-editorial">
-    <div className="mb-10">
-      <h2 className="text-3xl font-bold text-ink mb-3">Dernières Analyses & Doctrine</h2>
-      <p className="text-lg text-ink-light max-w-2xl">
-        Retrouvez des analyses pointues et des ressources doctrinales actualisées, rédigées par des
-        experts en procédure civile, droit OHADA, immobilier et affaires. De quoi nourrir vos
-        recherches et rester à jour.
-      </p>
-    </div>
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      {articles.map((article) => (
-        <ArticleCard key={article.slug} {...article} />
-      ))}
-    </div>
-  </div>
-</section>
+      <section className="py-16 bg-surface">
+        <div className="container-editorial">
+          <div className="mb-10">
+            <h2 className="text-3xl font-bold text-ink mb-2">Dernières Analyses & Doctrine</h2>
+            <div className="h-1 w-20 bg-accent mb-4" />
+            <p className="text-lg text-ink-light max-w-2xl">
+              Retrouvez des analyses pointues et des ressources doctrinales actualisées, rédigées par des
+              experts en procédure civile, droit OHADA, immobilier et affaires. De quoi nourrir vos
+              recherches et rester à jour.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {articles.map((article) => (
+              <ArticleCard key={article.slug} {...article} />
+            ))}
+          </div>
+        </div>
+      </section>
       <MediaSection />
       <NewsletterSection />
     </>

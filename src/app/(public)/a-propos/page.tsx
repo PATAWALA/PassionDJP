@@ -7,7 +7,8 @@ export default function AboutPage() {
       <div className="container-editorial">
         {/* En-tête */}
         <div className="text-center md:text-left mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-ink mb-4">À propos de PassionDJP</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-ink mb-2">À propos de PassionDJP</h1>
+          <div className="h-1 w-20 bg-accent mb-4 md:mx-0 mx-auto" />
           <p className="text-lg text-ink-light max-w-2xl md:mx-0 mx-auto">
             Une plateforme dédiée à la diffusion d'une doctrine juridique fiable et actualisée,
             fondée par Kevin DIZO.
@@ -26,15 +27,19 @@ export default function AboutPage() {
                 className="object-cover"
               />
             </div>
-            {/* Badge */}
-            <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 bg-primary text-white px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap">
-              Kevin DIZO
+            {/* Badge avec statut */}
+            <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 w-full max-w-xs bg-accent text-white px-4 py-3 rounded-xl text-center shadow-lg">
+              <p className="font-semibold text-sm">Kevin DIZO</p>
+              <p className="text-xs text-white/90 mt-0.5">
+                Docteur en Droit Privé et Sciences criminelles — ATER à Paris 10 Nanterre
+              </p>
             </div>
           </div>
 
           {/* Texte */}
           <div>
-            <h2 className="text-3xl font-bold text-ink mb-4">Notre mission</h2>
+            <h2 className="text-3xl font-bold text-ink mb-2">Notre mission</h2>
+            <div className="h-1 w-16 bg-accent mb-4" />
             <p className="text-ink-light mb-6">
               PassionDJP centralise les analyses, transcriptions et ressources en procédure civile,
               droit OHADA, immobilier et affaires. L'objectif est d'offrir aux étudiants,
@@ -43,15 +48,15 @@ export default function AboutPage() {
             </p>
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
-                <CheckCircle2 className="h-5 w-5 text-primary mt-0.5" />
+                <CheckCircle2 className="h-5 w-5 text-accent mt-0.5" />
                 <span className="text-ink-light">Des contenus rédigés par des experts reconnus.</span>
               </li>
               <li className="flex items-start gap-3">
-                <CheckCircle2 className="h-5 w-5 text-primary mt-0.5" />
+                <CheckCircle2 className="h-5 w-5 text-accent mt-0.5" />
                 <span className="text-ink-light">Une mise à jour régulière des jurisprudences et réformes.</span>
               </li>
               <li className="flex items-start gap-3">
-                <CheckCircle2 className="h-5 w-5 text-primary mt-0.5" />
+                <CheckCircle2 className="h-5 w-5 text-accent mt-0.5" />
                 <span className="text-ink-light">Un espace contributeur pour favoriser le partage de connaissances.</span>
               </li>
             </ul>
@@ -68,7 +73,8 @@ export default function AboutPage() {
 
         {/* Domaines couverts (rappel) */}
         <div className="text-center md:text-left">
-          <h2 className="text-3xl font-bold text-ink mb-6">Nos domaines d'expertise</h2>
+          <h2 className="text-3xl font-bold text-ink mb-2">Nos domaines d'expertise</h2>
+          <div className="h-1 w-20 bg-accent mb-6 md:mx-0 mx-auto" />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               "Procédure Civile",
@@ -76,8 +82,8 @@ export default function AboutPage() {
               "Droit Immobilier",
               "Droit des Affaires",
             ].map((domain) => (
-              <div key={domain} className="card p-6 hover:shadow-2xl transition-shadow">
-                <Scale className="h-6 w-6 text-primary mb-3" />
+              <div key={domain} className="card p-6 hover:shadow-2xl transition-shadow hover:border-accent/30">
+                <Scale className="h-6 w-6 text-accent mb-3" />
                 <h3 className="font-semibold text-ink">{domain}</h3>
               </div>
             ))}

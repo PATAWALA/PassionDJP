@@ -35,7 +35,7 @@ export function MediaCard({ title, youtubeId, duration, description, transcripti
         {transcription && (
           <button
             onClick={() => setShowTranscription(!showTranscription)}
-            className="mt-3 inline-flex items-center gap-2 text-sm text-primary hover:text-primary-hover transition-colors"
+            className="mt-3 inline-flex items-center gap-2 text-sm text-accent hover:text-accent-hover transition-colors"
           >
             <FileText className="h-4 w-4" />
             {showTranscription ? "Masquer la transcription" : "Voir la transcription"}

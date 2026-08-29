@@ -48,7 +48,8 @@ export default function ArticlesPage() {
     <div className="py-16 bg-surface">
       <div className="container-editorial">
         <div className="mb-10">
-          <h1 className="text-4xl font-bold text-ink mb-3">Articles & Doctrine</h1>
+          <h1 className="text-4xl font-bold text-ink mb-2">Articles & Doctrine</h1>
+          <div className="h-1 w-20 bg-accent mb-4" />
           <p className="text-lg text-ink-light max-w-2xl">
             Retrouvez toutes nos analyses, fiches doctrinales et ressources juridiques actualisées.
           </p>

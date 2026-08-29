@@ -61,19 +61,19 @@ export function ArticleCard({
             <span>{date}</span>
           </div>
 
-          <h3 className="text-lg font-semibold text-ink group-hover:text-primary transition-colors mb-2 line-clamp-2">
+          <h3 className="text-lg font-semibold text-ink group-hover:text-accent transition-colors mb-2 line-clamp-2">
             {title}
           </h3>
 
           <p className="text-sm text-ink-light line-clamp-2 mb-4">{excerpt}</p>
 
-          <div className="flex items-center text-primary font-medium text-sm group-hover:text-primary-hover">
+          <div className="flex items-center text-primary font-medium text-sm group-hover:text-accent transition-colors">
             Lire l'article
             <ArrowUpRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
           </div>
         </div>
 
-        <span className="absolute bottom-0 left-0 h-1 w-0 bg-primary transition-all duration-500 group-hover:w-full" />
+        <span className="absolute bottom-0 left-0 h-1 w-0 bg-accent transition-all duration-500 group-hover:w-full" />
       </Link>
     </motion.div>
   );

@@ -13,7 +13,7 @@ export default function LoginPage() {
             <Link href="/" className="inline-block">
               <span className="relative inline-block font-heading text-3xl font-semibold text-primary tracking-tight">
                 Passion<span className="text-ink">DJP</span>
-                <span className="absolute left-0 -bottom-1 w-full h-1 bg-primary/30 -skew-x-12 rounded-sm" />
+                <span className="absolute left-0 -bottom-1 w-full h-1 bg-accent/60 -skew-x-12 rounded-sm" />
               </span>
             </Link>
           </div>
@@ -38,7 +38,7 @@ export default function LoginPage() {
               </label>
               <Input id="password" type="password" placeholder="••••••••" required />
             </div>
-            <Button type="submit" className="w-full">
+            <Button type="submit" variant="gold" className="w-full">
               <Lock className="mr-2 h-4 w-4" />
               Se connecter
             </Button>
@@ -47,7 +47,7 @@ export default function LoginPage() {
           <div className="mt-6 text-center text-sm">
             <p className="text-ink-light">
               Pas encore contributeur ?{" "}
-              <Link href="#" className="text-primary hover:text-primary-hover font-medium">
+              <Link href="#" className="text-accent hover:text-accent-hover font-medium">
                 Demander un accès
               </Link>
             </p>
@@ -55,7 +55,7 @@ export default function LoginPage() {
         </div>
 
         <p className="text-center mt-6 text-sm text-ink-light">
-          <Link href="/" className="text-primary hover:text-primary-hover">
+          <Link href="/" className="text-accent hover:text-accent-hover">
             ← Retour à l'accueil
           </Link>
         </p>

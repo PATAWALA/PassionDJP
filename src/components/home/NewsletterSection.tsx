@@ -25,7 +25,7 @@ export function NewsletterSection() {
           Recevez chaque semaine une sélection d'analyses et de jurisprudences essentielles, directement dans votre boîte mail.
         </p>
         {submitted ? (
-          <p className="text-primary font-medium">Merci ! Votre inscription a bien été prise en compte.</p>
+          <p className="text-accent font-medium">Merci ! Votre inscription a bien été prise en compte.</p>
         ) : (
           <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4">
             <Input
@@ -34,9 +34,9 @@ export function NewsletterSection() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-              className="flex-1 bg-surface border-border text-ink placeholder-ink-light focus:border-primary"
+              className="flex-1 bg-surface border-border text-ink placeholder-ink-light focus:border-accent"
             />
-            <Button type="submit" className="bg-primary text-white hover:bg-primary-hover">
+            <Button type="submit" variant="gold">
               S'abonner à la Veille
             </Button>
           </form>
