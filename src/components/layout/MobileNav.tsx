@@ -13,13 +13,13 @@ export function MobileNav({ isOpen, onClose }: MobileNavProps) {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 bg-primary md:hidden overflow-y-auto">
+    <div className="fixed inset-0 z-50 bg-[#1e3a5f] md:hidden overflow-y-auto">
       <div className="container-editorial py-6 flex flex-col h-full">
         <div className="flex items-center justify-between mb-8">
           <Link href="/" className="flex items-center gap-3" onClick={onClose}>
-            <div className="relative h-10 w-10 overflow-hidden rounded-lg">
+            <div className="relative h-10 w-10 overflow-hidden rounded-lg bg-white/10">
               <Image
-                src="/images/logo.jpeg"
+                src="/images/logo.jpg"
                 alt="PassionDJP"
                 fill
                 className="object-contain"

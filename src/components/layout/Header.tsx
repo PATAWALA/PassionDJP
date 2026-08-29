@@ -11,14 +11,14 @@ export function Header() {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-40 bg-primary border-b border-white/10">
+    <header className="sticky top-0 z-40 bg-[#1e3a5f] border-b border-white/10">
       {/* Rangée principale */}
       <div className="container-editorial flex items-center justify-between h-20">
         {/* Logo image */}
         <Link href="/" className="flex items-center gap-3">
-          <div className="relative h-10 w-10 overflow-hidden rounded-lg">
+          <div className="relative h-10 w-10 overflow-hidden rounded-lg bg-white/10">
             <Image
-              src="/images/logo.jpeg"
+              src="/images/logo.jpg"
               alt="PassionDJP"
               fill
               className="object-contain"
@@ -74,7 +74,7 @@ export function Header() {
       </div>
 
       {/* Barre de recherche toujours visible sur tous les écrans */}
-      <div className="border-t border-white/10 bg-primary p-4">
+      <div className="border-t border-white/10 bg-[#1e3a5f] p-4">
         <div className="container-editorial">
           <Input
             placeholder="Rechercher une doctrine, un thème..."
