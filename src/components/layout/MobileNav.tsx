@@ -25,32 +25,32 @@ export function MobileNav({ isOpen, onClose }: MobileNavProps) {
                 className="object-contain"
               />
             </div>
-            <span className="font-heading text-2xl font-semibold text-white tracking-tight">
-              Passion<span className="text-accent">DJP</span>
+            <span className="font-heading text-2xl font-semibold !text-white tracking-tight">
+              Passion<span className="!text-accent">DJP</span>
             </span>
           </Link>
-          <button onClick={onClose} className="text-white hover:text-accent" aria-label="Fermer">
+          <button onClick={onClose} className="!text-white hover:!text-accent" aria-label="Fermer">
             <X className="h-6 w-6" />
           </button>
         </div>
 
         <nav className="flex flex-col gap-4 text-base">
-          <Link href="/" onClick={onClose} className="text-white hover:text-accent transition-colors">
+          <Link href="/" onClick={onClose} className="!text-white hover:!text-accent transition-colors">
             Accueil
           </Link>
-          <Link href="/articles" onClick={onClose} className="text-white hover:text-accent transition-colors">
+          <Link href="/articles" onClick={onClose} className="!text-white hover:!text-accent transition-colors">
             Articles
           </Link>
-          <Link href="/media" onClick={onClose} className="text-white hover:text-accent transition-colors">
+          <Link href="/media" onClick={onClose} className="!text-white hover:!text-accent transition-colors">
             Médias
           </Link>
-          <Link href="/a-propos" onClick={onClose} className="text-white hover:text-accent transition-colors">
+          <Link href="/a-propos" onClick={onClose} className="!text-white hover:!text-accent transition-colors">
             À propos
           </Link>
           <Link
             href="/admin/login"
             onClick={onClose}
-            className="text-white hover:text-accent flex items-center gap-2 transition-colors"
+            className="!text-white hover:!text-accent flex items-center gap-2 transition-colors"
           >
             <Lock className="h-4 w-4" /> Espace Cabinet
           </Link>
@@ -60,20 +60,20 @@ export function MobileNav({ isOpen, onClose }: MobileNavProps) {
           <Link
             href="#newsletter"
             onClick={onClose}
-            className="block rounded-md bg-accent px-4 py-2 text-center text-sm font-medium text-white hover:bg-accent-hover transition-colors"
+            className="block rounded-md bg-accent px-4 py-2 text-center text-sm font-medium !text-white hover:bg-accent-hover transition-colors"
           >
             S'abonner à la Veille
           </Link>
           <Link
             href="/espace-contributeurs"
             onClick={onClose}
-            className="text-white hover:text-accent flex items-center gap-2 transition-colors"
+            className="!text-white hover:!text-accent flex items-center gap-2 transition-colors"
           >
             <Lock className="h-4 w-4" /> Espace Contributeurs
           </Link>
           <a
             href="mailto:contact@passiondjp.com"
-            className="text-white hover:text-accent flex items-center gap-2 transition-colors"
+            className="!text-white hover:!text-accent flex items-center gap-2 transition-colors"
           >
             <Mail className="h-4 w-4" /> contact@passiondjp.com
           </a>
