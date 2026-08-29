@@ -21,28 +21,28 @@ export function MobileNav({ isOpen, onClose }: MobileNavProps) {
               <span className="absolute left-0 -bottom-1 w-full h-1 bg-accent/60 -skew-x-12 rounded-sm" />
             </span>
           </Link>
-          <button onClick={onClose} className="text-white/80 hover:text-accent" aria-label="Fermer">
+          <button onClick={onClose} className="text-white hover:text-accent" aria-label="Fermer">
             <X className="h-6 w-6" />
           </button>
         </div>
 
         <nav className="flex flex-col gap-4 text-base">
-          <Link href="/" onClick={onClose} className="text-white/90 hover:text-accent transition-colors">
+          <Link href="/" onClick={onClose} className="text-white hover:text-accent transition-colors">
             Accueil
           </Link>
-          <Link href="/articles" onClick={onClose} className="text-white/90 hover:text-accent transition-colors">
+          <Link href="/articles" onClick={onClose} className="text-white hover:text-accent transition-colors">
             Articles
           </Link>
-          <Link href="/media" onClick={onClose} className="text-white/90 hover:text-accent transition-colors">
+          <Link href="/media" onClick={onClose} className="text-white hover:text-accent transition-colors">
             Médias
           </Link>
-          <Link href="#" onClick={onClose} className="text-white/90 hover:text-accent transition-colors">
+          <Link href="/a-propos" onClick={onClose} className="text-white hover:text-accent transition-colors">
             À propos
           </Link>
           <Link
             href="/admin/login"
             onClick={onClose}
-            className="text-white/90 hover:text-accent flex items-center gap-2 transition-colors"
+            className="text-white hover:text-accent flex items-center gap-2 transition-colors"
           >
             <Lock className="h-4 w-4" /> Espace Cabinet
           </Link>
@@ -59,13 +59,13 @@ export function MobileNav({ isOpen, onClose }: MobileNavProps) {
           <Link
             href="/espace-contributeurs"
             onClick={onClose}
-            className="text-white/90 hover:text-accent flex items-center gap-2 transition-colors"
+            className="text-white hover:text-accent flex items-center gap-2 transition-colors"
           >
             <Lock className="h-4 w-4" /> Espace Contributeurs
           </Link>
           <a
             href="mailto:contact@passiondjp.com"
-            className="text-white/90 hover:text-accent flex items-center gap-2 transition-colors"
+            className="text-white hover:text-accent flex items-center gap-2 transition-colors"
           >
             <Mail className="h-4 w-4" /> contact@passiondjp.com
           </a>

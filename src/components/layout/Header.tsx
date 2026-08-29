@@ -23,16 +23,16 @@ export function Header() {
 
         {/* Navigation desktop */}
         <nav className="hidden md:flex items-center gap-8 lg:gap-10">
-          <Link href="/" className="text-base font-medium text-white/90 hover:text-accent transition-colors">
+          <Link href="/" className="text-base font-medium text-white hover:text-accent transition-colors">
             Accueil
           </Link>
-          <Link href="/articles" className="text-base font-medium text-white/90 hover:text-accent transition-colors">
+          <Link href="/articles" className="text-base font-medium text-white hover:text-accent transition-colors">
             Articles
           </Link>
-          <Link href="/media" className="text-base font-medium text-white/90 hover:text-accent transition-colors">
+          <Link href="/media" className="text-base font-medium text-white hover:text-accent transition-colors">
             Médias
           </Link>
-          <Link href="/a-propos" className="text-base font-medium text-white/90 hover:text-accent transition-colors">
+          <Link href="/a-propos" className="text-base font-medium text-white hover:text-accent transition-colors">
             À propos
           </Link>
         </nav>
@@ -48,7 +48,7 @@ export function Header() {
 
           <Link
             href="/espace-contributeurs"
-            className="hidden lg:inline-flex items-center gap-1.5 text-sm text-white/80 hover:text-accent transition-colors"
+            className="hidden lg:inline-flex items-center gap-1.5 text-sm text-white hover:text-accent transition-colors"
           >
             <Lock className="h-4 w-4" />
             Espace Contributeurs
@@ -57,7 +57,7 @@ export function Header() {
           {/* Bouton hamburger mobile */}
           <button
             onClick={() => setIsMobileNavOpen(true)}
-            className="md:hidden text-white/80 hover:text-accent transition-colors"
+            className="md:hidden text-white hover:text-accent transition-colors"
             aria-label="Menu"
           >
             <Menu className="h-6 w-6" />
