@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, Lock } from "lucide-react";
 import { Input } from "@/components/ui/Input";
 import { MobileNav } from "./MobileNav";
@@ -13,11 +14,18 @@ export function Header() {
     <header className="sticky top-0 z-40 bg-primary border-b border-white/10">
       {/* Rangée principale */}
       <div className="container-editorial flex items-center justify-between h-20">
-        {/* Logo */}
-        <Link href="/" className="flex items-center">
-          <span className="relative inline-block font-heading text-3xl font-semibold text-white tracking-tight">
+        {/* Logo image */}
+        <Link href="/" className="flex items-center gap-3">
+          <div className="relative h-10 w-10 overflow-hidden rounded-lg">
+            <Image
+              src="/images/logo.jpeg"
+              alt="PassionDJP"
+              fill
+              className="object-contain"
+            />
+          </div>
+          <span className="font-heading text-2xl font-semibold text-white tracking-tight">
             Passion<span className="text-accent">DJP</span>
-            <span className="absolute left-0 -bottom-1 w-full h-1 bg-accent/60 -skew-x-12 rounded-sm" />
           </span>
         </Link>
 

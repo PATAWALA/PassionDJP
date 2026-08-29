@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { X, Lock, Mail } from "lucide-react";
 
 interface MobileNavProps {
@@ -12,13 +13,20 @@ export function MobileNav({ isOpen, onClose }: MobileNavProps) {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 bg-primary md:hidden">
+    <div className="fixed inset-0 z-50 bg-primary md:hidden overflow-y-auto">
       <div className="container-editorial py-6 flex flex-col h-full">
         <div className="flex items-center justify-between mb-8">
-          <Link href="/" className="flex items-center" onClick={onClose}>
-            <span className="relative inline-block font-heading text-3xl font-semibold text-white tracking-tight">
+          <Link href="/" className="flex items-center gap-3" onClick={onClose}>
+            <div className="relative h-10 w-10 overflow-hidden rounded-lg">
+              <Image
+                src="/images/logo.jpeg"
+                alt="PassionDJP"
+                fill
+                className="object-contain"
+              />
+            </div>
+            <span className="font-heading text-2xl font-semibold text-white tracking-tight">
               Passion<span className="text-accent">DJP</span>
-              <span className="absolute left-0 -bottom-1 w-full h-1 bg-accent/60 -skew-x-12 rounded-sm" />
             </span>
           </Link>
           <button onClick={onClose} className="text-white hover:text-accent" aria-label="Fermer">
