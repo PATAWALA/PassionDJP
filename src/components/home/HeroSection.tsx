@@ -35,7 +35,7 @@ const itemVariants = {
 
 export function HeroSection() {
   return (
-    <section className="relative py-20 md:py-24 overflow-hidden bg-gradient-to-b from-background via-background to-accent-light/60">
+    <section className="relative py-12 md:py-16 overflow-hidden bg-gradient-to-b from-background via-background to-accent-light/60">
       {/* Formes décoratives floues */}
       <div className="absolute top-20 right-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-72 h-72 bg-accent/10 rounded-full blur-3xl pointer-events-none" />
@@ -48,7 +48,7 @@ export function HeroSection() {
       >
         <motion.h1
           variants={itemVariants}
-          className="text-3xl sm:text-4xl md:text-6xl font-bold text-ink mb-8 md:mb-6 leading-tight tracking-tight"
+          className="text-3xl sm:text-4xl md:text-6xl font-bold text-ink mb-4 leading-tight tracking-tight"
         >
           Trouvez la doctrine juridique
           <br />
@@ -60,14 +60,14 @@ export function HeroSection() {
 
         <motion.p
           variants={itemVariants}
-          className="text-lg md:text-xl text-ink-light max-w-2xl md:mx-0 mx-auto mb-10"
+          className="text-lg md:text-xl text-ink-light max-w-2xl md:mx-0 mx-auto mb-6"
         >
           PassionDJP centralise les analyses, transcriptions et ressources en procédure civile,
           droit OHADA, immobilier et affaires. Gagnez du temps, évitez les sources obsolètes et
           accédez à une base unique pour vos recherches.
         </motion.p>
 
-        <motion.div variants={itemVariants} className="max-w-2xl md:mx-0 mx-auto mb-8">
+        <motion.div variants={itemVariants} className="max-w-2xl md:mx-0 mx-auto mb-6">
           <div className="flex flex-col sm:flex-row gap-2">
             <div className="relative flex-1">
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-ink-light" />
