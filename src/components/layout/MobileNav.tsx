@@ -38,7 +38,7 @@ export function MobileNav({ isOpen, onClose }: MobileNavProps) {
           <Link href="/" onClick={onClose} className="!text-white hover:!text-accent transition-colors">
             Accueil
           </Link>
-          <Link href="/articles" onClick={onClose} className="!text-white hover:!text-accent transition-colors">
+          <Link href="/article" onClick={onClose} className="!text-white hover:!text-accent transition-colors">
             Articles
           </Link>
           <Link href="/media" onClick={onClose} className="!text-white hover:!text-accent transition-colors">

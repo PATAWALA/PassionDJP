@@ -34,7 +34,7 @@ export function Header() {
           <Link href="/" className="text-base font-medium !text-white hover:!text-accent transition-colors">
             Accueil
           </Link>
-          <Link href="/articles" className="text-base font-medium !text-white hover:!text-accent transition-colors">
+          <Link href="/article" className="text-base font-medium !text-white hover:!text-accent transition-colors">
             Articles
           </Link>
           <Link href="/media" className="text-base font-medium !text-white hover:!text-accent transition-colors">
